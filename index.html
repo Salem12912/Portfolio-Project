@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for Responsive Design and SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salem Al Shamsi - Creative Director from UAE showcasing interactive TikTok-style portfolio with documentaries, web projects, and multimedia experiences">
+    <meta name="keywords" content="Salem Al Shamsi, Creative Director, UAE, Portfolio, TikTok, Interactive Media, Documentary, Web Design">
+    <meta name="author" content="Salem Al Shamsi">
+    
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Salem Al Shamsi - Creative Portfolio">
+    <meta property="og:description" content="Interactive TikTok-style portfolio showcasing creative projects from UAE to the world">
+    <meta property="og:type" content="website">
+    
+    <!-- Page Title -->
+    <title>Salem Al Shamsi - Creative Portfolio</title>
+    
+    <!-- External Font Import - SF Pro Display for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Calligraphy Font for Handwriting Animation -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload Critical Resources for Performance -->
+    <link rel="preload" href="salem.jpeg" as="image">
+</head>
+<body>
+    <!-- ================================ -->
+    <!-- LOADING SCREEN SECTION -->
+    <!-- Creative animated loading screen with dynamic messages -->
+    <!-- ================================ -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <!-- Animated Logo with Rotating Rings -->
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <div class="logo-inner">
+                        <span class="logo-text">S</span>
+                    </div>
+                    <div class="logo-ring"></div>
+                    <div class="logo-ring-2"></div>
+                </div>
+            </div>
+            
+            <!-- Dynamic Loading Messages -->
+            <div class="loading-text">
+                <div class="loading-messages">
+                    <div class="message-container">
+                        <div class="typing-indicator">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="loading-message active" id="loadingMessage">Initializing creative workspace...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="progressPercent">0%</span>
+                    <div class="loading-status">
+                        <span class="status-icon">⚡</span>
+                        <span class="status-text" id="statusText">Starting up...</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Elements -->
+            <div class="loading-particles">
+                <div class="particle-1">🎬</div>
+                <div class="particle-2">🎨</div>
+                <div class="particle-3">🚀</div>
+                <div class="particle-4">🌍</div>
+                <div class="particle-5">✨</div>
+                <div class="particle-6">🎵</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================ -->
+    <!-- NAVIGATION SECTION -->
+    <!-- TikTok-style top navigation bar -->
+    <!-- ================================ -->
+    <nav class="tiktok-nav">
+        <div class="nav-top">
+            <button class="nav-btn">Following</button>
+            <button class="nav-btn active">For You</button>
+            <button class="nav-btn">LIVE</button>
+        </div>
+    </nav>
+
+    <!-- ================================ -->
+    <!-- MAIN CONTENT SECTION -->
+    <!-- TikTok-style scrollable video feed container -->
+    <!-- ================================ -->
+    <div class="video-feed" id="videoFeed">
+        
+        <!-- ================================ -->
+        <!-- HERO SECTION - Interactive Carousel -->
+        <!-- Main introduction with dynamic carousel cards -->
+        <!-- ================================ -->
+        <div class="video-container active" data-video="intro">
+            <div class="video-background">
+                <div class="dynamic-hero-bg"></div>
+                <div class="particle-system">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+            </div>
+            
+            <div class="video-content">
+                <div class="hero-carousel">
+                    <!-- Main Profile Card -->
+                    <div class="carousel-card active" id="profile-card">
+                        <div class="card-content">
+                            <div class="profile-avatar">
+                                <img src="salem.jpeg" alt="Salem Al Shamsi">
+                                <div class="avatar-ring"></div>
+                            </div>
+                            <h1 class="hero-title">
+                                <span class="first-name">Salem</span>
+                                <span class="last-name">Al Shamsi</span>
+                            </h1>
+                            <p class="hero-subtitle">Creative Director • UAE 🇦🇪</p>
+                            <div class="social-stats">
+                                <div class="stat">
+                                    <span class="stat-number">2.1M</span>
+                                    <span class="stat-label">Followers</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">847</span>
+                                    <span class="stat-label">Following</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">12.5M</span>
+                                    <span class="stat-label">Likes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Journey Card -->
+                    <div class="carousel-card" id="journey-card">
+                        <div class="card-content">
+                            <div class="journey-icon">🚀</div>
+                            <h2 class="card-title">My Journey</h2>
+                            <div class="journey-path">
+                                <div class="journey-step active">
+                                    <div class="step-content">
+                                        <span class="step-year">2004</span>
+                                        <span class="step-desc">Born in Al Ain 🌅</span>
+                                    </div>
+                                </div>
+                                <div class="journey-step">
+                                    <div class="step-content">
+                                        <span class="step-year">2022</span>
+                                        <span class="step-desc">Sandhurst Academy ⚔️</span>
+                                    </div>
+                                </div>
+                                <div class="journey-step">
+
+                                    <div class="step-content">
+                                        <span class="step-year">2023</span>
+                                        <span class="step-desc">National Service 🎖️</span>
+                                    </div>
+                                </div>
+                                <div class="journey-step">
+                                    <div class="step-content">
+                                        <span class="step-year">2024</span>
+                                        <span class="step-desc">NYUAD Student 🏛️</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Card -->
+                    <div class="carousel-card" id="skills-card">
+                        <div class="card-content">
+                            <div class="skills-icon">🎨</div>
+                            <h2 class="card-title">Creative Skills</h2>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-icon">📹</div>
+                                    <span>Video Production</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">🎬</div>
+                                    <span>Documentary</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">💻</div>
+                                    <span>Interactive Media</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">🌐</div>
+                                    <span>Web Design</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">📱</div>
+                                    <span>UI/UX</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon">🎭</div>
+                                    <span>Storytelling</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Global Card -->
+                    <div class="carousel-card" id="global-card">
+                        <div class="card-content">
+                            <div class="global-icon">🌍</div>
+                            <h2 class="card-title">Global Reach</h2>
+                            <div class="world-map">
+                                <div class="location-pin uae">
+                                    <div class="pin-dot"></div>
+                                    <span class="pin-label">UAE 🇦🇪</span>
+                                </div>
+                                <div class="location-pin uk">
+                                    <div class="pin-dot"></div>
+                                    <span class="pin-label">UK 🇬🇧</span>
+                                </div>
+                                <div class="location-pin global">
+                                    <div class="pin-dot"></div>
+                                    <span class="pin-label">17+ Countries</span>
+                                </div>
+                            </div>
+                            <div class="global-stats">
+                                <div class="global-stat">
+                                    <span class="stat-icon">🏠</span>
+                                    <span class="stat-text">Al Ain → Abu Dhabi</span>
+                                </div>
+                                <div class="global-stat">
+                                    <span class="stat-icon">✈️</span>
+                                    <span class="stat-text">Global Perspective</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Card -->
+                    <div class="carousel-card" id="about-card">
+                        <div class="card-content">
+                            <div class="about-icon">📱</div>
+                            <h2 class="card-title">About This Portfolio</h2>
+                            <div class="about-summary">
+                                <p class="about-tagline">TikTok-style interactive showcase</p>
+                                <p class="about-subtitle">Swipe • Explore • Experience</p>
+                            </div>
+                            <div class="about-features">
+                                <div class="feature-item">
+                                    <span class="feature-icon">🎬</span>
+                                    <span class="feature-text">Creative Projects</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🎵</span>
+                                    <span class="feature-text">Interactive Media</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🌍</span>
+                                    <span class="feature-text">Global Journey</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Dots - Moved Outside -->
+            <div class="carousel-nav-external">
+                <div class="nav-dot active" data-card="profile-card"></div>
+                <div class="nav-dot" data-card="journey-card"></div>
+                <div class="nav-dot" data-card="skills-card"></div>
+                <div class="nav-dot" data-card="global-card"></div>
+                <div class="nav-dot" data-card="about-card"></div>
+            </div>
+
+            <!-- Swipe Indicator -->
+            <div class="swipe-indicator-external">
+                <div class="swipe-arrow">→</div>
+                <span class="swipe-text">Swipe to explore</span>
+            </div>
+
+            <!-- Background Music for Homepage -->
+            <audio class="project-audio" id="audioIntro" loop>
+                <source src="https://www.bensound.com/bensound-music/bensound-inspire.mp3" type="audio/mpeg">
+                <source src="https://www.bensound.com/bensound-music/bensound-creative.mp3" type="audio/mpeg">
+                <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+            </audio>
+
+            <div class="video-sidebar">
+                <div class="profile-pic">
+                    <img src="salem.jpeg" alt="Salem">
+                </div>
+                <button class="action-btn like-btn" data-count="0" data-liked="false">
+                    <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+                <button class="action-btn comment-btn" data-count="1">
+                    <svg class="comment-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">1</span>
+                </button>
+                <button class="action-btn share-btn" data-count="0">
+                    <svg class="share-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 6L12 2L8 6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2V15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+            </div>
+
+            <div class="video-info">
+                <div class="user-info">
+                    <span class="username">@salem_alshamsi</span>
+                    <span class="description">Welcome to my creative journey! 🚀 From UAE to the world ✨ #Creative #UAE #NYUAD</span>
+                </div>
+                <div class="music-info">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">Original sound - Salem Al Shamsi</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================ -->
+        <!-- PROJECT SHOWCASE SECTIONS -->
+        <!-- Interactive project presentations with media and actions -->
+        <!-- ================================ -->
+        
+        <!-- Project 1: NYUAD 360° Campus Documentary -->
+        <div class="video-container" data-video="project1">
+            <div class="video-background">
+                <div class="gradient-bg project1-bg"></div>
+                <img src="project1.jpeg" alt="NYUAD 360° Campus Documentary" class="project-image">
+            </div>
+
+            <a href="https://salem12912.github.io/NYUAD-360/" target="_blank" class="project-link">View Project →</a>
+
+
+
+            <audio class="project-audio" id="audio1" loop>
+                <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg">
+                <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+            </audio>
+
+            <div class="video-sidebar">
+                <div class="profile-pic">
+                    <img src="salem.jpeg" alt="Salem">
+                </div>
+                <button class="action-btn like-btn" data-count="0" data-liked="false">
+                    <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+                <button class="action-btn comment-btn" data-count="1">
+                    <svg class="comment-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">1</span>
+                </button>
+                <button class="action-btn share-btn" data-count="0">
+                    <svg class="share-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 6L12 2L8 6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2V15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+            </div>
+
+            <div class="video-info">
+                <div class="user-info">
+                    <span class="username">@salem_alshamsi</span>
+                    <span class="description">Campus life like you've never seen it! 🎥 90 seconds of pure NYUAD magic ✨ #NYUAD #Campus #Documentary</span>
+                </div>
+                <div class="music-info">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">Original sound - Salem Al Shamsi</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: 
+         y Comic -->
+        <div class="video-container" data-video="project2">
+            <div class="video-background">
+                <div class="gradient-bg project2-bg"></div>
+                <img src="project2.jpeg" alt="Ahmed's Journey Interactive Comic" class="project-image">
+            </div>
+            
+            <a href="https://enockmagara.github.io/comic/" target="_blank" class="project-link">View Project →</a>
+
+
+
+            <audio class="project-audio" id="audio2" loop>
+                <source src="https://www.bensound.com/bensound-music/bensound-epic.mp3" type="audio/mpeg">
+                <source src="https://www.bensound.com/bensound-music/bensound-adventure.mp3" type="audio/mpeg">
+                <source src="https://www.bensound.com/bensound-music/bensound-memories.mp3" type="audio/mpeg">
+                <source src="https://www.bensound.com/bensound-music/bensound-piano.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="video-sidebar">
+                <div class="profile-pic">
+                    <img src="salem.jpeg" alt="Salem">
+                </div>
+                <button class="action-btn like-btn" data-count="0" data-liked="false">
+                    <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+                <button class="action-btn comment-btn" data-count="1">
+                    <svg class="comment-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">1</span>
+                </button>
+                <button class="action-btn share-btn" data-count="0">
+                    <svg class="share-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 6L12 2L8 6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2V15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+            </div>
+
+            <div class="video-info">
+                <div class="user-info">
+                    <span class="username">@salem_alshamsi</span>
+                    <span class="description">Learning Gahwa traditions through interactive storytelling ☕ Arabic hospitality at its finest 🇦🇪 #Culture #Interactive #UAE</span>
+                </div>
+                <div class="music-info">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">Traditional - Arabic Heritage</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: LoveFreq Radio -->
+        <div class="video-container" data-video="project3">
+            <div class="video-background">
+                <div class="gradient-bg project3-bg"></div>
+                <img src="project3.jpeg" alt="LoveFreq Retro Radio Interface" class="project-image">
+            </div>
+            
+
+            <a href="https://abdelrahmankhater2.github.io/lovefreq/" target="_blank" class="project-link">View Project →</a>
+
+
+
+            <audio class="project-audio" id="audio3" loop>
+                <source src="https://www.bensound.com/bensound-music/bensound-dreams.mp3" type="audio/mpeg">
+                <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+            </audio>
+
+            <div class="video-sidebar">
+                <div class="profile-pic">
+                    <img src="salem.jpeg" alt="Salem">
+                </div>
+                <button class="action-btn like-btn" data-count="0" data-liked="false">
+                    <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+                <button class="action-btn comment-btn" data-count="1">
+                    <svg class="comment-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">1</span>
+                </button>
+                <button class="action-btn share-btn" data-count="0">
+                    <svg class="share-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 6L12 2L8 6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2V15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+            </div>
+
+            <div class="video-info">
+                <div class="user-info">
+                    <span class="username">@salem_alshamsi</span>
+                    <span class="description">Tune into different frequencies of love 📻💕 Retro vibes meet modern storytelling 🎙️ #LoveFreq #Audio #RetroTech</span>
+                </div>
+                <div class="music-info">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">Love Frequencies - 101.5 FM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: Dorm Gourmet -->
+        <div class="video-container" data-video="project4">
+            <div class="video-background">
+                <div class="gradient-bg project4-bg"></div>
+                <img src="project4.jpeg" alt="Dorm Gourmet Comedy Film" class="project-image">
+            </div>
+
+            <a href="https://enockmagara.github.io/IM-VIDEO/" target="_blank" class="project-link">View Project →</a>
+
+
+
+            <audio class="project-audio" id="audio4" loop>
+                <source src="https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3" type="audio/mpeg">
+                <source src="https://www.bensound.com/bensound-music/bensound-buddy.mp3" type="audio/mpeg">
+                <source src="https://www.bensound.com/bensound-music/bensound-funkyelement.mp3" type="audio/mpeg">
+                <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+            </audio>
+
+            <div class="video-sidebar">
+                <div class="profile-pic">
+                    <img src="salem.jpeg" alt="Salem">
+                </div>
+                <button class="action-btn like-btn" data-count="0" data-liked="false">
+                    <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+                <button class="action-btn comment-btn" data-count="1">
+                    <svg class="comment-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">1</span>
+                </button>
+                <button class="action-btn share-btn" data-count="0">
+                    <svg class="share-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 6L12 2L8 6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2V15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="count">0</span>
+                </button>
+            </div>
+
+            <div class="video-info">
+                <div class="user-info">
+                    <span class="username">@salem_alshamsi</span>
+                    <span class="description">When creativity meets hunger 🍳😂 Interactive film about dorm life struggles #DormLife #Comedy #Interactive</span>
+                </div>
+                <div class="music-info">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">Comedy Gold - Kitchen Chaos</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
